@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div class="left1">
+        <h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+        <img src="obraz2.jpg" alt="Czesanie">
+    </div>
+    <div class="right1">
+        <h1>MENU</h1>
+    </div>
+    <div class="right2">
+            <ol>
+                <li><a href="fryzura.html">Strzyżenie</a>
+                    <ul>
+                        <li>krótkie</li>
+                        <li>średnie</li>
+                        <li>półdługie</li>
+                        <li>długie</li>
+                    </ul>
+                </li>
+                <li>Czesanie</li>
+                <li>Koloryzacja</li>
+            </ol>
+        </div>
+    <div class="left2">
+            <h3>Dziś promocja na strzyżenie włosów</h3>
+                <input type="radio" value="Krótkie" name="rodzaj" id="k"> Krótkie <br>
+                <input type="radio" value="Średnie" name="rodzaj" id="s"> Średnie <br>
+                <input type="radio" value="Półdługie" name="rodzaj" id="p"> Półdługie <br>
+                <input type="radio" value="Długie" name="rodzaj" id="d"> Długie <br>
+                <button onclick="wynik()">Odkryj promocje</button>
+                <p id="wynik"></p>
+            <script>
+                function wynik(){
+                        if(document.getElementById('k').checked) wartosc= 25;
+                        if(document.getElementById('s').checked) wartosc= 30;
+                        if(document.getElementById('p').checked) wartosc= 40;
+                        if(document.getElementById('d').checked) wartosc= 50;
+                            
+                        document.getElementById('wynik').innerHTML="Cena strzyżenia: "+wartosc;
+                }
+            </script>
+    </div>
+    <div class="right3">
+        <img src="obraz1.jpg" alt="Fryzjer">
+    </div>
+    <footer>
+        <p>Autor: 01292802473</p>
+    </footer>
+</body>
+</html>
